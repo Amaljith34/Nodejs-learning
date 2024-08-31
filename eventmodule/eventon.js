@@ -1,6 +1,6 @@
 const EventEmitter=require('events')
 const eventEmitter=new EventEmitter();
-eventEmitter.on('fn',(name,age)=>{
+eventEmitter.once('fn',(name,age)=>{
     console.log(`hello my name is ${name} ${age}`);
     
 })
