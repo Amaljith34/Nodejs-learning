@@ -13,7 +13,7 @@ const server=http.createServer((req,res)=>{
         res.writeHead(200,{'Conent-Type':'text/plain'})
         res.end('tjis is contact page')
     }
-    res.end()
+    // res.end()
 })
 const PORT=3035;
 server.listen(PORT,()=>{

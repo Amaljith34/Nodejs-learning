@@ -6,3 +6,5 @@ const eventEmitter=new EventEmitter();
 })
 eventEmitter.emit('connect');
 eventEmitter.emit('connect');
+eventEmitter.emit('connect');
+eventEmitter.emit('connect');

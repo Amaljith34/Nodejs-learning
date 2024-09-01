@@ -1,10 +1,21 @@
-const fs=require('fs');
+// const fs=require('fs');
+// const readable=fs.createReadStream('./test.txt');
+// readable.on('data',(chunk)=>{
+//     console.log(`recive ${chunk.length} byteof data`);
+    
+// })
+// readable.on('end',()=>{
+//     console.log('there is no more data');
+    
+// })
+
+const fs=require('fs')
 const readable=fs.createReadStream('./test.txt');
 readable.on('data',(chunk)=>{
-    console.log(`recive ${chunk.length} byteof data`);
+    console.log(`${chunk.length}and `);
     
 })
 readable.on('end',()=>{
-    console.log('there is no more data');
+    console.log(`ther is no more data`);
     
 })

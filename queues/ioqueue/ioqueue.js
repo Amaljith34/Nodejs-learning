@@ -1,20 +1,21 @@
 const fs=require('fs');
-const { setTimeout } = require('timers/promises');
-fs.writeFile('sample.txt','hello world',(err)=>{
-    if(err){
-        console.log(err);
+// const { setTimeout } = require('timers/promises');
+// fs.writeFile('sample.txt','hello world',(err)=>{
+//     if(err){
+//         console.log(err);
         
-    }
-    else{
-        console.log('sucess');
-    }
+//     }
+//     else{
+//         console.log('sucess');
+//     }
     
-})
-setTimeout(()=>console.log('this isn set time out'),0);
-fs.readFile('__faname',()=>{
+// })
+fs.readFile('./sample.txt',()=>{
     console.log('this is readfile');
-    console.log(data);
+    // console.log(data);
 })
  process.nextTick(()=>console.log('heloo'))
  Promise.resolve().then(()=>console.log('this is promise .resolve')
  )
+ setTimeout(()=>console.log('this isn set time out'),0);
+

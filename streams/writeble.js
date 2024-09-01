@@ -11,6 +11,9 @@ const fs=require('fs');
 // });
 
 const writable=fs.createWriteStream('./test.txt')
-writable.write('helooooo how are you')
-writable.end()
+writable.write('1234567890')
+writable.end('end',()=>{
+    console.log('sucess');
+    
+})
 
