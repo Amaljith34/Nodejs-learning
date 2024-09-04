@@ -12,7 +12,7 @@
 
 
 const fs=require('fs');
-fs.appendFile('testingfile','good morning ',(err)=>{
+fs.appendFile('sample.txt','good morning ',(err)=>{
     if(err){
         console.log(err);
         

@@ -7,6 +7,8 @@ async function readFileAsync() {
   } catch (err) {
     console.error(err);
   }
+  console.log('helo');
+  
 }
 
 readFileAsync();

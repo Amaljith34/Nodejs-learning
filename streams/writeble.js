@@ -10,9 +10,16 @@ const fs=require('fs');
 //     }
 // });
 
-const writable=fs.createWriteStream('./test.txt')
-writable.write('1234567890')
-writable.end('end',()=>{
+// const writable=fs.createWriteStream('./test.txt')
+// writable.write('1234567890')
+// writable.end('end',()=>{
+//     console.log('sucess');
+    
+// })
+
+const writable=fs.createWriteStream('sample.txt')
+writable.write('hhhhhhhhhhhhhh<F');
+writable.end('end',(err)=>{
     console.log('sucess');
     
 })

@@ -1,4 +1,6 @@
 const buffer=Buffer.from('hello world')
+console.log(buffer);
+
 const base64=buffer.toString('base64')
 console.log(base64);
 const normal=Buffer.from(base64,'base64')

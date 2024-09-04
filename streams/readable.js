@@ -11,11 +11,20 @@
 
 const fs=require('fs')
 const readable=fs.createReadStream('./test.txt');
+// readable.on('data',(chunk)=>{
+//     console.log(`${chunk.length}and `);
+    
+// })
+// readable.on('end',()=>{
+//     console.log(`ther is no more data`);
+    
+// })
+
 readable.on('data',(chunk)=>{
-    console.log(`${chunk.length}and `);
+    console.log(chunk.length);
     
 })
 readable.on('end',()=>{
-    console.log(`ther is no more data`);
+    console.log('no more data');
     
 })

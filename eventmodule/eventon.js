@@ -8,7 +8,7 @@
 
 const EventEmitter=require('events')
 const eventEmitter=new EventEmitter();
-eventEmitter.once('fn',(name,age)=>{
+eventEmitter.on('fn',(name,age)=>{
     console.log(`my name is ${name} and ${age} old`);
     
 })
