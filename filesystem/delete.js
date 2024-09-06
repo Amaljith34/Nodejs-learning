@@ -1,5 +1,5 @@
 const fs=require('fs');
-fs.unlink('./sample.js',(err)=>{
+fs.unlink('../index.js',(err)=>{
     if(err){
         console.log(err);
         

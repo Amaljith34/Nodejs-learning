@@ -21,10 +21,8 @@ const readable=fs.createReadStream('./test.txt');
 // })
 
 readable.on('data',(chunk)=>{
-    console.log(chunk.length);
-    
+    console.log(chunk.length); 
 })
 readable.on('end',()=>{
     console.log('no more data');
-    
 })
